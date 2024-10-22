@@ -127,7 +127,7 @@ describe('main() tests', () => {
 
     test('init QuipService', async () => {
         await app.main();
-        expect(QuipService).toHaveBeenCalledWith('TOKEN');
+        expect(QuipService).toHaveBeenCalledWith('TOKEN', 'https://platform.quip.com:443/1');
     });
 
     test('setLogger for QuipService', async () => {
@@ -167,7 +167,8 @@ describe('main() tests', () => {
                 documentCSS: documentCSS,
                 embeddedImages: true,
                 comments: true,
-                docx: true
+                docx: true,
+                quipApiURL: "https://platform.quip.com:443/1"
             }
         );
         expect(app.quipProcessor.setLogger).toHaveBeenCalledWith(app.Logger);

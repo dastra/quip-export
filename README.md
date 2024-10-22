@@ -11,6 +11,7 @@ Features:
 * Embedded images for HTML-export _(--embedded-images)_
 * Export of comments and conversations for HTML-export _(--comments)_
 * Export of specific folders only _(--folders)_ 
+* Change the Quip API URL in the case of self-hosted quip instances _(--api-url)_
 * Export of referenced files in documents
 * Resolving of references between folders and documents to relative paths
 
@@ -91,6 +92,7 @@ npm install quip-export
   --docx                     Exports documents in MS-Office format (*.docx , *.xlsx)
   --comments                 Includes comments (messages) for the documents
   --folders "string"         Comma-separated folder's IDs to export
+  --api-url "string"         The URL of the quip API, if not https://platform.quip.com
   --debug                    Extended logging
 ```
 

@@ -145,8 +145,10 @@ class App {
             console.log('Docx export: comments option will be ignored.');
         }
 
+        this.apiUrl = (this.cliArguments['api-url'] || 'https://platform.quip.com:443/1');
+
         //Token verification
-        const quipService = new QuipService(this.cliArguments.token);
+        const quipService = new QuipService(this.cliArguments.token, this.apiUrl);
         quipService.setLogger(this.Logger);
 
         if(!await quipService.checkUser()) {
@@ -167,7 +169,8 @@ class App {
                 documentCSS: this.cliArguments['embedded-styles']? documentCSS : '',
                 embeddedImages: this.cliArguments['embedded-images'],
                 comments: this.cliArguments['comments'],
-                docx: this.cliArguments['docx']
+                docx: this.cliArguments['docx'],
+                quipApiURL: this.apiUrl
             });
 
         this.quipProcessor.setLogger(this.Logger);
