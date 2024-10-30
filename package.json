@@ -1,6 +1,6 @@
 {
   "name": "quip-export",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "description": "Export all folders and documents from Quip",
   "main": "index.js",
   "jest": {
@@ -57,8 +57,7 @@
     "semver": "^7.1.2"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-aenondynamics": "^0.2.0",
+    "eslint": "^9",
     "jest": "^29.7.0"
   }
 }

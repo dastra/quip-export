@@ -6,7 +6,7 @@ Quip-Export uses official [Quip Automation API](https://quip.com/dev/automation/
 Features:
 
 * Export in HTML format with original Quip styling
-* Export in MS Office format: .docx for documents, .xlsx for spresdsheets _(--docx)_ 
+* Export in MS Office format: .docx for documents, .xlsx for spreadsheets _(--docx)_
 * Embedded CSS for HTML-export _(--embedded-styles)_
 * Embedded images for HTML-export _(--embedded-images)_
 * Export of comments and conversations for HTML-export _(--comments)_
@@ -100,7 +100,7 @@ To generate a personal access token, visit the page: [https://quip.com/dev/token
 
 Be aware, the options --comments, --embedded-images, --embedded-styles don't work together with export in MS-Office format (--docx) and will be ignored.
 
-The easiest way to get to know ID of Quip fodler is just to open the folder in Quip web application in browser and look at adress line. For example the adress "https://quip.com/bGG333444111" points to the folder with ID "bGG333444111".
+The easiest way to get to know ID of Quip folder is just to open the folder in Quip web application in browser and look at adress line. For example the adress "https://quip.com/bGG333444111" points to the folder with ID "bGG333444111".
 
 ## Usage examples
 Export to folder c:\temp
